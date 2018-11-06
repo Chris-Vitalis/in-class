@@ -2,63 +2,66 @@
 
 /* tag selector */
 h1 { 
-
+    color: red;
+    font-size: 3em;
+    font-family: 'Gloria Hallelujah', cursive;
 } /* applied to <h1> */
 
 /* class selector */
 .design-name { 
-
+    font-size: 3em;
+    font-family: 'Gloria Hallelujah', cursive;
 } /* applied to elements with `class="design-name"` */
 
 /* id selector */
 #zen-intro { 
-
+    background-color: lavender;
+    border: 1px solid blue;
+    font-family: 'Gloria Hallelujah', cursive;
 } /* applied to the element with `id="zen-intro"` */
 
 /* group selector */
-.explanation .participation .benefits .requirements { 
-
+.explanation, .participation, .benefits, .requirements { 
+    
+    font-family: 'Gloria Hallelujah', cursive; 
 } /* applied to ANY .explanation OR .participation OR .benefits OR .requirements */
 
 /* combined selector */
-h3 .select { 
-
+h3.select { 
+    color: royalblue;
+    font-size: 2em;
 } /* applied to ONLY combination of <h3> AND .select */
 
 /* descendant selector */
 nav li { 
-
+    color: lightpink;
+    list-style: lower-greek;
 } /* applied ONLY to <li> INSIDE of <nav>
 
 /* child selector */
-div ul { 
-
+div > ul { 
+list-style: none;
 } /* applied to <ul> DIRECTLY INSIDE of <div>
 
 /* Immediately following selector */
-header div { 
-
+header ~ div { 
+background: azure;
 } /* applied to every element immediately after the first element */
 
 /* Preceded by selector */
-header div { 
-
+header + div { 
+    
+    background: peachpuff;
 } /* applied to every element immediately preceded by the first element */
 
 /* Attribute selector */
-role { 
-
-} /* applied to every element with role attribute */
+/* applied to every element with role attribute */
 
 /* Attribute value selector */
-role article { 
-
-} /* applied to every element with the value of article for the role attribute */
+/* applied to every element with the value of article for the role attribute */
 
 /* Not selector */
-not p { 
-
-} /* applied to all elements that are not the indicated element */
+/* applied to all elements that are not the indicated element */
 
 /* All selector */
 * { 
@@ -67,44 +70,44 @@ not p {
 
 /* Pseudo-class selector */
 li:focus, li:hover { 
-
+    background-color: powderblue;
 } /* applied to element on focus or hover */
 
 /* Pseudo-class selector */
 nav li:first-child {
-
+    background: aliceblue;
 } /* applied to the <li> that is the first child of nav /*
 
 /* Pseudo-class selector */
 :not(:first-of-type) {
-
+    border: 1em solid mintcream;
 } /* NOT applied the first of type of each element 
 that is the first of element of its parent */
 
 /* Pseudo-class selector */
 li:nth-child(2) {
-
+    text-align: center;
 } /* applied the <li> that is the 2nd child of its parent */
 
 /* Pseudo-class selector */
 li:nth-child(odd) {
-
+    text-align: right;  
 } /* applied to every odd <li> child (first element is #1) */
 
 /* Pseudo-element selector */
-h1::first-letter {
-
+h1,h2::first-letter {
+    font-size:5em;
 } /* applied the first letter of each <h1> element */
 
 /* Pseudo-class + pseudo-element selector */
 p:first-of-type::first-letter {
-
+    font-size: 3em;
 } /* applied to the first letter ONLY of <p> that 
 are the first of type <p> in their parent */
 
 /* pseudo-element selector */
 h1::after {
-
+content: url(/smiley.gif);
 } /* applied before ANY <h2> element */ `
 
 /* Pseudo-element selector */

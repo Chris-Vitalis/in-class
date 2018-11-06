@@ -21,8 +21,13 @@ input.onkeydown = drawLines;
 function getLinesFromText() {
     // Get the value of the text input
     let text = document.getElementById('textInput').value;
-
+    let textList = text.split(" ");
+    return textList.map(function(word){
+        return word.length
+    });
+    
     // Return an *array* containing the length of each word
+    
 }
 
 
@@ -33,7 +38,7 @@ function drawLines() {
     ctx.beginPath();
 
     // Set initial position (x, y) in the center of the canvas
-    let position = {};
+    let position = {250,250};
 
     // Move the pen to the starting position
 

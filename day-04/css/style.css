@@ -1,8 +1,18 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
 .intro {
 
+background-color: maroon;
 }
 
 header {
+    width: 50%;
+    background-color:yellow;
+    padding: 1em;
+    margin: 1em;
+    bording: 5px solid blue;
 
 }
 
@@ -23,7 +33,7 @@ header {
 }
 
 .explanation, .particpation, .benefits, .requirements {
-
+flex:1;
 }
 
 footer {
